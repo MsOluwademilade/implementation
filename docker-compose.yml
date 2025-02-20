@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  orchestration-app:
+    build: .
+    container_name: orchestration_app
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    networks:
+      - backend_network
+
+networks:
+  backend_network:
+    driver: bridge

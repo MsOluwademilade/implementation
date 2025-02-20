@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-dotenv
+websockets
+kubernetes
+gitpython
+requests
+h11
